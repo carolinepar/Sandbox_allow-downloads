@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sandbox Test</title>
+
+  <link rel="stylesheet" href="#">
+
+</head>
+
+<body>
+    <h1>Sandbox Test</h1>
+    <iframe src="download.html" width="600" height="600" sandbox="allow-downloads allow-download allow-forms allow-scripts">
+
+        <!--
+            For sandbox="allow-downloads allow-forms allow-scripts":
+            Chrome worked
+            Safari worked
+            Firefox Worked
+            ...Without it, Chrome did not download but Firefox and Safari did
+
+            For sandbox="allow-downloads-without-user-activation allow-forms allow-scripts"
+            Firefox worked
+            Safari worked
+
+
+            Could not test in IE or Chrome yet... Should I test Opera?
+            Including the attribute shouldn't break other browsers. 
+        -->
+
+
+    </iframe> 
+</body>
+</html>
